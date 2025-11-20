@@ -24,6 +24,11 @@ window.onscroll = () => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
+            
+            sec.classList.add('show-animate');
+        }
+        else{
+            sec.classList.remove('show-animate');
         }
     });
 
@@ -36,4 +41,18 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
     
+    //animation footer on scroll
+    const footer = document.querySelector('footer');
+
+    const animateFooter = () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 80) {
+            footer.classList.add('show-animate');
+        } else {
+            footer.classList.remove('show-animate');
+        }
+    };
+
+    window.addEventListener('scroll', animateFooter);
+    window.addEventListener('load', animateFooter);
+    window.addEventListener('resize', animateFooter);
 }
