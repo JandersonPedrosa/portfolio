@@ -106,3 +106,30 @@ window.onscroll = () => {
         }, { passive: false });
     });
 })();
+
+// Modal About - Abre e fecha o pop-up "Ler mais"
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('aboutModal');
+    const openBtn = document.getElementById('openModal');
+    const closeBtn = document.querySelector('.modal .close');
+
+    if (openBtn) {
+        openBtn.onclick = function(e) {
+            e.preventDefault();
+            modal.style.display = 'block';
+        }
+    }
+
+    if (closeBtn) {
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+    }
+
+    // Fecha ao clicar fora do conteúdo
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+});

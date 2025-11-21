@@ -41,8 +41,8 @@
             </p>
 
             <div class="btn-box">
-                <a href="#" class="btn">Ver currículo</a>
-                <a href="#" class="btn">Falar comigo</a>
+                <a href="https://github.com/JandersonPedrosa/portfolio/blob/main/Curriculo-Janderson-Pedrosa-FullStack-Jr-2025.pdf" class="btn" target="_blank" rel="noopener noreferrer">Ver currículo</a>
+                <a href="https://wa.me/5541988698512?text=Olá%20Janderson!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20oportunidades%20de%20estágio/júnior." class="btn" target="_blank" rel="noopener noreferrer">Falar comigo</a>
                 <span class="animate" style="--i:5;"></span>
             </div>
         </div>
@@ -75,7 +75,7 @@
             </p>
 
             <div class="btn-box btns">
-                <a href="#" class="btn">Ler mais</a>
+                <a href="#" class="btn" id="openModal">Ler mais</a>
                 <span class="animate scroll" style="--i:5;"></span>
             </div>
         </div>
@@ -248,14 +248,14 @@
     <section class="contact" id="contact">
         <h2 class="heading">Fale <span>Comigo!<span class="animate scroll" style="--i:1;"></span></span></h2>
 
-        <form action="#">
+        <form action="https://formspree.io/f/xyzoaaao" method="POST">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Nome Completo" required>
+                    <input type="text" name="nome" placeholder="Nome Completo" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="email" placeholder="Endereço de E-mail" required>
+                    <input type="email" name="_replyto" placeholder="Endereço de E-mail" required>
                     <span class="focus"></span>
                 </div>
 
@@ -264,11 +264,11 @@
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Número de Celular" required>
+                    <input type="tel" placeholder="Número de Celular">
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Assunto" required>
+                    <input type="text" name="assunto" placeholder="Assunto" required>
                     <span class="focus"></span>
                 </div>
 
@@ -276,7 +276,7 @@
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
+                <textarea name="mensagem" cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
                 <span class="focus"></span>
 
                 <span class="animate scroll" style="--i:7;"></span>
@@ -303,6 +303,23 @@
             <span class="animate scroll" style="--i:3;"></span>
         </div>
     </footer>
+
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Sobre Mim – Minha Jornada</h2>
+
+            <p>Desde criança sempre fui apaixonado por tecnologia, mas, como muitos, acabei seguindo caminhos diferentes influenciado por expectativas familiares e circunstâncias da vida. Iniciei Direito, tranquei no 4.º semestre ao perceber que não era o meu lugar, cheguei a me formar piloto comercial — um sonho realizado, mas que não consegui exercer por questões financeiras.</p>
+
+            <p>Em 2019 conclui o bacharelado em Programação de Jogos Digitais, onde desenvolvi lógica de programação, trabalho em equipe e criatividade em projetos interativos. Embora tenha gostado da área, percebi que o mercado brasileiro oferece poucas oportunidades estáveis em games, o que me levou a empreender no segmento de vendas e montagem de computadores. O negócio cresceu rapidamente, mas, como todo empreendedor sabe, imprevistos acontecem e precisei encerrar as atividades.</p>
+
+            <p>Foi nesse momento, aos 35 anos, que decidi ouvir definitivamente a paixão que sempre esteve lá: a tecnologia. Hoje estou cursando o Técnico em Desenvolvimento Web e Mobile no Senac PR e a formação Back-End Java/Spring Boot no programa ONE (Oracle + Alura), construindo aplicações full-stack completas todos os dias — do design responsivo ao banco de dados.</p>
+
+            <p>Minha trajetória me ensinou disciplina, resolução de problemas reais, gestão de tempo e, acima de tudo, resiliência. Trago a maturidade de quem já enfrentou desafios profissionais e a energia de quem encontrou o caminho certo. Estou 100 % focado e disponível para contribuir desde o primeiro dia em uma equipe ágil, seja como estagiário ou desenvolvedor júnior.</p>
+
+            <p>Obrigado por conhecer um pouco mais de mim. Vamos conversar sobre como posso agregar valor à sua empresa?</p>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
